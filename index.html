@@ -11,16 +11,18 @@
     content="Owais Javaid, graphic designer, brand identity, video production, Karachi, creative designer, portfolio" />
   <meta name="author" content="Owais Javaid" />
 
-  <!-- Open Graph / Facebook Sharing -->
+  <!-- Open Graph / Facebook Sharing (Required for WhatsApp link previews) -->
   <meta property="og:type" content="profile" />
   <meta property="profile:first_name" content="Owais" />
   <meta property="profile:last_name" content="Javaid" />
   <meta property="profile:username" content="owaisjavaid" />
-
+  <!-- NOTE: WhatsApp requires absolute URLs (with https://) for the page and image to display previews. -->
+  <!-- If using a custom domain, replace "https://adil-java.github.io/OwaisResume" with your custom domain. -->
+  <meta property="og:url" content="https://owais-j.netlify.app/" />
   <meta property="og:title" content="Owais Javaid — Creative Designer & Visual Storyteller" />
   <meta property="og:description"
     content="Creative Designer & Visual Storyteller based in Karachi. Specializing in brand identity, graphic design, video production, and campaign visuals." />
-  <meta property="og:image" content="/profileImg.jpeg" />
+  <meta property="og:image" content="https://owais-j.netlify.app/profileImg.jpeg" />
   <meta property="og:image:alt" content="Owais Javaid Profile Picture - Creative Designer & Visual Storyteller" />
   <meta property="og:image:type" content="image/jpeg" />
   <meta property="og:image:width" content="1200" />
@@ -28,11 +30,11 @@
 
   <!-- Twitter Sharing -->
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://github.com/adil-java/OwaisResume" />
+
   <meta property="twitter:title" content="Owais Javaid — Creative Designer & Visual Storyteller" />
   <meta property="twitter:description"
     content="Creative Designer & Visual Storyteller based in Karachi. Specializing in brand identity, graphic design, video production, and campaign visuals." />
-  <meta property="twitter:image" content="/profileImg.jpeg" />
+  <meta property="twitter:image" content="https://owais-j.netlify.app/profileImg.jpeg" />
   <meta property="twitter:image:alt" content="Owais Javaid Profile Picture - Creative Designer & Visual Storyteller" />
 
   <!-- Structured Data (JSON-LD) -->
@@ -44,10 +46,10 @@
         "givenName": "Owais",
         "familyName": "Javaid",
         "jobTitle": "Creative Designer & Visual Storyteller",
-        "url": "https://github.com/adil-java/OwaisResume",
+        "url": "https://owais-j.netlify.app/",
         "image": {
           "@type": "ImageObject",
-          "url": "/profileImg.jpeg",
+          "url": "https://owais-j.netlify.app/profileImg.jpeg",
           "caption": "Owais Javaid Profile Picture"
         },
         "sameAs": [
