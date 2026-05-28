@@ -1,0 +1,375 @@
+{
+  "personal": {
+    "name": "Owais Javaid",
+    "firstName": "Owais",
+    "title": "Creative Designer & Visual Storyteller",
+    "tagline": [
+      "I Make Brands",
+      "Look Like They",
+      "Mean It."
+    ],
+    "badge": "Available for projects",
+    "description": "Creative Designer & Visual Storyteller based in Karachi. I craft brand identities, design campaigns, and produce video content that makes organizations unforgettable.",
+    "email": "owaisjavaid90@gmail.com",
+    "phone": "+923342991996",
+    "phoneFormatted": "+92 334 299 1996",
+    "location": "Karachi, Pakistan",
+    "linkedin": "https://www.linkedin.com/in/owais-javaid",
+    "linkedinDisplay": "linkedin.com/in/owais-javaid",
+    "bio": [
+      "I'm Owais Javaid, a Creative Designer and Visual Storyteller based in Karachi, Pakistan. Over the past 4+ years, I've been making sure the right message reaches the right people — beautifully.",
+      "My work spans brand identity, graphic design, video production, and digital content, built for organizations that want to make a real impression. Currently, I'm at Patients' Aid Foundation, where I translate a life-saving healthcare mission into compelling visual campaigns."
+    ],
+    "quote": "I don't just make things look good. I ask: what do we want people to feel? What action should they take? Then I design backward from that answer.",
+    "contactCTA": "If you're a nonprofit, startup, or brand that needs a designer who cares about the work as much as you do — let's talk."
+  },
+  "stats": [
+    {
+      "number": "4+",
+      "label": "Years Experience"
+    },
+    {
+      "number": "50K+",
+      "label": "People Reached"
+    },
+    {
+      "number": "30%",
+      "label": "Donation Increase"
+    }
+  ],
+  "services": [
+    {
+      "icon": "◆",
+      "title": "Brand Identity",
+      "description": "Logos, visual systems, and brand guidelines that are consistent and ownable."
+    },
+    {
+      "icon": "▶",
+      "title": "Video Production",
+      "description": "From concept to final cut — cinematography and motion graphics."
+    },
+    {
+      "icon": "◐",
+      "title": "Graphic Design",
+      "description": "Social media creatives, posters, marketing materials, and digital assets."
+    },
+    {
+      "icon": "⬡",
+      "title": "Digital Content",
+      "description": "Campaign visuals, email templates, and performance-focused ad creatives."
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "SIHA Organic Detox Oil | Social Media & Brand Visuals",
+      "category": "Brand",
+      "image": "/Theme/Brand guideline/Mock 01.jpg",
+      "description": "Designed a comprehensive visual campaign for Pakistan's leading healthcare nonprofit that reached over 50,000 people on social media and drove a 30% increase in donations during Ramadan.",
+      "client": "Siha",
+      "year": "2024",
+      "role": "Creative Designer",
+      "likes": 284,
+      "views": "3.2K"
+    },
+    {
+      "id": 5,
+      "title": "LOOP MEDIA — Continuity in Design",
+      "category": "Social",
+      "image": "/Theme/Free_M_Mockups_iMac_24_Inch.jpg",
+      "description": "Built graphic templates reused across multiple client accounts, cutting production time by approximately 25%. Delivered on tight deadlines with zero revision rejections.",
+      "behanceUrl": "https://www.behance.net/gallery/249646189/LOOP-MEDIA-Continuity-in-Design",
+      "client": "Ilma University",
+      "year": "2026",
+      "role": "Creative Specialist",
+      "likes": null,
+      "views": null
+    },
+    {
+      "id": 6,
+      "title": "SIHA Organic Detox Oil | Social Media & Brand Visuals",
+      "category": "Brand",
+      "image": "/Theme/Brand guideline/Mock 01.jpg",
+      "description": "Delivered brand identity packages (logo, color system, typography) for multiple clients across e-commerce, retail, and services sectors with a 60% repeat client rate.",
+      "behanceUrl": "https://www.behance.net/gallery/249649627/SIHA-Organic-Detox-Oil-Social-Media-Brand-Visuals",
+      "client": "Siha",
+      "year": "2023",
+      "role": "Freelance Designer",
+      "likes": null,
+      "views": null
+    },
+    {
+      "id": 7,
+      "title": "Ankhahi — Short Film (1080p)",
+      "category": "Video",
+      "image": "/videos/AnkahiThumb.png",
+      "video": "/public/videos/Ankhahi_compressed.mp4",
+      "description": "A cinematic short film exploring untold stories. Full production from concept development to final color grading and delivery.",
+      "client": null,
+      "year": "2024",
+      "role": "Director & Editor",
+      "likes": null,
+      "views": null
+    },
+    {
+      "id": 8,
+      "title": "ILMA University — TVC",
+      "category": "Video",
+      "image": "/videos/limaThub.png",
+      "video": "/videos/Ilma University -TVC-English-Owais-Hassan-Bilal-Minhal-Waheel.mp4",
+      "description": "Television commercial produced for ILMA University. Handled cinematography, editing, and post-production for the English-language version.",
+      "client": "ILMA University",
+      "year": "2025",
+      "role": "Cinematographer & Editor",
+      "likes": null,
+      "views": null
+    },
+    {
+      "id": 3,
+      "title": "Brand Story — gif",
+      "category": "Video",
+      "image": "/videos/NexaThumb.png",
+      "video": "/videos/0934.mp4",
+      "description": "Short-form video content for social media that increased average post engagement by 70% compared to the previous quarter. From concept to final cut.",
+      "client": "Patients' Aid Foundation",
+      "year": "2023",
+      "role": "Videographer & Editor",
+      "likes": null,
+      "views": null
+    }
+  ],
+  "projectCategories": [
+    "All",
+    "Brand",
+    "Social",
+    "Video",
+    "Print"
+  ],
+  "experience": [
+    {
+      "title": "Creative Designer",
+      "company": "Patients' Aid Foundation",
+      "date": "April 2023 — Present",
+      "duration": "3+ years",
+      "location": "Karachi, Pakistan",
+      "points": [
+        "Designed visual campaigns for Pakistan's leading healthcare nonprofit, producing assets/month across social, print, and digital channels.",
+        "Developed a consistent brand visual language across all patient-facing materials, improving campaign cohesion and donor recognition.",
+        "Produced short-form video content for social media that increased average post engagement by 70%."
+      ]
+    },
+    {
+      "title": "Creative Specialist",
+      "company": "Digital Expanders Agency",
+      "date": "February 2024 — November 2024",
+      "duration": "10 months",
+      "location": "London Area, United Kingdom",
+      "points": [
+        "Designed performance-focused creatives for digital ad campaigns, supporting paid social strategies for brand clients.",
+        "Collaborated with marketing teams to translate campaign objectives into visuals — delivered on tight deadlines with zero revision rejections.",
+        "Built graphic templates reused across multiple client accounts, cutting production time by approximately 25%."
+      ]
+    },
+    {
+      "title": "Senior Graphic Designer",
+      "company": "Kolachi Resource Hub",
+      "date": "November 2023 — April 2024",
+      "duration": "6 months",
+      "location": "Karachi, Pakistan",
+      "points": [
+        "Created branded marketing collateral, including brochures, banners, and digital assets for multiple brands.",
+        "Supported internal communications design needs, ensuring visual consistency across departments.",
+        "Incorporated client feedback across multiple rounds to deliver final-approved assets."
+      ]
+    },
+    {
+      "title": "Freelance Designer",
+      "company": "DigiKal",
+      "date": "November 2023 — December 2023",
+      "duration": "2 months",
+      "location": "Karachi, Pakistan",
+      "points": [
+        "Delivered brand identity packages (logo, color system, typography) for clients across e-commerce, retail, and services.",
+        "Managed full design lifecycle independently — from client brief to final delivery — with a 60% repeat client rate.",
+        "Created social media content calendars and visual templates that reduced content creation time by 40%."
+      ]
+    },
+    {
+      "title": "Graphic Designer",
+      "company": "Lakhani Solution",
+      "date": "April 2021 — January 2023",
+      "duration": "1 year 10 months",
+      "location": "Karachi, Pakistan",
+      "points": [
+        "Created visually stunning graphics, logos, and branding elements for corporate clients.",
+        "Developed innovative design concepts that met and exceeded client expectations.",
+        "Proficient in Adobe Creative Suite (Photoshop, Illustrator, InDesign)."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Media Sciences",
+      "institution": "ILMA University",
+      "field": "Arts, Entertainment, and Media Management",
+      "year": "January 2026 - Present "
+    },
+    {
+      "degree": "Broadcast Media Suit",
+      "institution": "Arena Multimedia",
+      "field": "Cinematography and Film/Video Production",
+      "year": "October 2023 — March 2024"
+    },
+    {
+      "degree": "Diploma of Visual Effects and Multimedia",
+      "institution": "NED University of Engineering and Technology",
+      "field": "Art/Art Studies, General",
+      "year": "May 2022 — July 2023"
+    },
+    {
+      "degree": "Diploma of Graphic Designing",
+      "institution": "Click 5",
+      "field": "Graphic Design",
+      "year": "2021"
+    },
+    {
+      "degree": "Diploma of Associate Engineer",
+      "institution": "Govt College Of Technical",
+      "field": "Computer Information Technology",
+      "year": "2016 — 2018"
+    }
+  ],
+  "skillGroups": [
+    {
+      "title": "Design",
+      "icon": "🎨",
+      "skills": [
+        {
+          "name": "Brand Identity",
+          "level": 95
+        },
+        {
+          "name": "Visual Systems",
+          "level": 90
+        },
+        {
+          "name": "Typography",
+          "level": 88
+        },
+        {
+          "name": "Layout & Composition",
+          "level": 92
+        }
+      ]
+    },
+    {
+      "title": "Video & Motion",
+      "icon": "🎬",
+      "skills": [
+        {
+          "name": "Cinematography",
+          "level": 85
+        },
+        {
+          "name": "Video Editing",
+          "level": 88
+        },
+        {
+          "name": "Motion Graphics",
+          "level": 78
+        },
+        {
+          "name": "Color Grading",
+          "level": 82
+        }
+      ]
+    },
+    {
+      "title": "Digital Marketing",
+      "icon": "📱",
+      "skills": [
+        {
+          "name": "Social Media Design",
+          "level": 94
+        },
+        {
+          "name": "Campaign Creatives",
+          "level": 90
+        },
+        {
+          "name": "Content Strategy",
+          "level": 82
+        },
+        {
+          "name": "Print Design",
+          "level": 88
+        }
+      ]
+    }
+  ],
+  "tools": [
+    {
+      "name": "Photoshop",
+      "icon": "Ps",
+      "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/adobephotoshop.svg",
+      "className": "ps",
+      "level": "Expert"
+    },
+    {
+      "name": "Illustrator",
+      "icon": "Ai",
+      "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/adobeillustrator.svg",
+      "className": "ai",
+      "level": "Expert"
+    },
+    {
+      "name": "Premiere Pro",
+      "icon": "Pr",
+      "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/adobepremierepro.svg",
+      "className": "pr",
+      "level": "Advanced"
+    },
+    {
+      "name": "After Effects",
+      "icon": "Ae",
+      "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/adobeaftereffects.svg",
+      "className": "ae",
+      "level": "Advanced"
+    },
+    {
+      "name": "DaVinci Resolve",
+      "icon": "Dv",
+      "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/davinciresolve.svg",
+      "className": "dv",
+      "level": "Advanced"
+    },
+    {
+      "name": "Audition",
+      "icon": "Au",
+      "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/adobeaudition.svg",
+      "className": "au",
+      "level": "Advanced"
+    },
+    {
+      "name": "InDesign",
+      "icon": "Id",
+      "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/adobeindesign.svg",
+      "className": "id",
+      "level": "Advanced"
+    },
+    {
+      "name": "Canva",
+      "icon": "Cv",
+      "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/canva.svg",
+      "className": "cv",
+      "level": "Expert"
+    },
+    {
+      "name": "Figma",
+      "icon": "Fg",
+      "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/figma.svg",
+      "className": "fg",
+      "level": "Intermediate"
+    }
+  ]
+}
