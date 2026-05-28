@@ -12,8 +12,8 @@ export default function ProjectModal({ project, onClose }) {
   }, [onClose])
 
   return (
-    <div 
-      className={`project-modal-overlay ${project ? 'open' : ''}`} 
+    <div
+      className={`project-modal-overlay ${project ? 'open' : ''}`}
       onClick={(e) => { if (e.target === e.currentTarget) onClose() }}
       id="project-modal"
     >
@@ -30,13 +30,15 @@ export default function ProjectModal({ project, onClose }) {
                 src={project.video}
                 controls
                 playsInline
+                autoPlay
+                muted
                 poster={project.image}
               />
             ) : (
-              <img 
-                className="modal-image" 
-                src={project.image} 
-                alt={project.title} 
+              <img
+                className="modal-image"
+                src={project.image}
+                alt={project.title}
               />
             )}
             <div className="modal-content">
@@ -45,9 +47,9 @@ export default function ProjectModal({ project, onClose }) {
               <p>{project.description}</p>
 
               {project.behanceUrl && (
-                <a 
-                  href={project.behanceUrl} 
-                  target="_blank" 
+                <a
+                  href={project.behanceUrl}
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="btn-submit"
                   style={{ marginTop: 'var(--space-md)', textDecoration: 'none' }}
