@@ -40,9 +40,9 @@ export default function Portfolio({ onProjectClick }) {
           },
           y: 50,
           opacity: 0,
-          duration: 0.7,
+          duration: 0.5,
           ease: 'power3.out',
-          stagger: 0.1,
+          stagger: 0.05,
         })
       }, gridRef)
       isFirstRender.current = false
@@ -68,7 +68,7 @@ export default function Portfolio({ onProjectClick }) {
     ? [...baseFiltered.filter(p => !p.video), ...baseFiltered.filter(p => !!p.video)]
     : baseFiltered
 
-  const displayProjects = isMobile && !showAll && activeCategory === 'All'
+  const displayProjects = !showAll && activeCategory === 'All'
     ? filteredProjects.slice(0, 6)
     : filteredProjects
 
@@ -143,7 +143,7 @@ export default function Portfolio({ onProjectClick }) {
           })}
         </div>
 
-        {isMobile && !showAll && activeCategory === 'All' && filteredProjects.length > 6 && (
+        {!showAll && activeCategory === 'All' && filteredProjects.length > 6 && (
           <div style={{ display: 'flex', justifyContent: 'center', marginTop: 'var(--space-2xl)' }}>
             <button className="btn-secondary" onClick={() => setShowAll(true)}>
               See More Projects
