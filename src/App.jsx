@@ -1,14 +1,15 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, Suspense, lazy } from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
-import About from './components/About'
-import Portfolio from './components/Portfolio'
-import Experience from './components/Experience'
-import Skills from './components/Skills'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
-import ProjectModal from './components/ProjectModal'
 import Loader from './components/Loader'
+
+const About = lazy(() => import('./components/About'))
+const Portfolio = lazy(() => import('./components/Portfolio'))
+const Experience = lazy(() => import('./components/Experience'))
+const Skills = lazy(() => import('./components/Skills'))
+const Contact = lazy(() => import('./components/Contact'))
+const Footer = lazy(() => import('./components/Footer'))
+const ProjectModal = lazy(() => import('./components/ProjectModal'))
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -33,17 +34,21 @@ function App() {
       <Navbar />
       <main>
         <Hero />
-        <About />
-        <Experience />
-        <Portfolio onProjectClick={setSelectedProject} />
-        <Skills onProjectClick={setSelectedProject} />
-        <Contact />
+        <Suspense fallback={<div>Loading...</div>}>
+          <About />
+          <Experience />
+          <Portfolio onProjectClick={setSelectedProject} />
+          <Skills onProjectClick={setSelectedProject} />
+          <Contact />
+        </Suspense>
       </main>
-      <Footer />
-      <ProjectModal 
-        project={selectedProject} 
-        onClose={() => setSelectedProject(null)} 
-      />
+      <Suspense fallback={null}>
+        <Footer />
+        <ProjectModal 
+          project={selectedProject} 
+          onClose={() => setSelectedProject(null)} 
+        />
+      </Suspense>
     </>
   )
 }

@@ -230,6 +230,7 @@ export default function Hero() {
               key={i}
               src={icon.src}
               alt=""
+              loading="lazy"
               className="hero-floating-icon"
               style={{
                 position: 'absolute',

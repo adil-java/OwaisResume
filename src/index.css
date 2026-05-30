@@ -207,27 +207,19 @@ body {
 
 
 body::before {
-
   content: '';
-
   position: fixed;
-
   inset: 0;
-
   background-image: repeating-linear-gradient(
-
     135deg,
-
     rgba(31, 91, 255, 0.08) 0 1px,
-
     transparent 1px 6px
-
   );
-
   pointer-events: none;
-
   z-index: 0;
-
+  transform: translateZ(0);
+  will-change: transform;
+  backface-visibility: hidden;
 }
 
 
@@ -489,6 +481,10 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-backdrop-filter: blur(20px);
 
   box-shadow: 0 1px 0 var(--color-border);
+  
+  transform: translateZ(0);
+
+  will-change: transform, backdrop-filter;
 
 }
 
@@ -1666,6 +1662,10 @@ h1, h2, h3, h4, h5, h6 {
   animation-iteration-count: infinite;
 
   animation-timing-function: ease-in-out;
+  
+  will-change: transform;
+  
+  transform: translateZ(0);
 
 }
 
@@ -1973,14 +1973,18 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
+/* 1. Mobile View: Force the section to be hidden by default */
 .about-services {
+  display: none !important;
+}
 
-  display: grid;
-
-  grid-template-columns: 1fr 1fr;
-
-  gap: var(--space-md);
-
+/* 2. Laptop View: Bring your grid layout back automatically when the screen is wide */
+@media (min-width: 1024px) {
+  .about-services {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-md);
+  }
 }
 
 

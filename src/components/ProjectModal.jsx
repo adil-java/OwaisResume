@@ -56,6 +56,7 @@ export default function ProjectModal({ project, onClose }) {
                         className="modal-image slide-image"
                         src={imgUrl}
                         alt={`${project.title} - Slide ${idx + 1}`}
+                        loading="lazy"
                       />
                     </div>
                   ))}
@@ -76,6 +77,7 @@ export default function ProjectModal({ project, onClose }) {
                 className="modal-image"
                 src={project.image}
                 alt={project.title}
+                loading="lazy"
               />
             )}
             <div className="modal-content">
