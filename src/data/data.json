@@ -25,16 +25,18 @@
   },
   "stats": [
     {
-      "number": "4+",
+      "number": "4+ ",
       "label": "Years Experience"
     },
     {
       "number": "50K+",
-      "label": "People Reached"
+      "label": "People Reached ",
+      "context": "Patients' Aid Foundation"
     },
     {
       "number": "30%",
-      "label": "Donation Increase"
+      "label": "Donation Increase ",
+      "context": "Patients' Aid Foundation"
     }
   ],
   "services": [
@@ -62,88 +64,315 @@
   "projects": [
     {
       "id": 1,
-      "title": "SIHA Organic Detox Oil | Social Media & Brand Visuals",
-      "category": "Brand",
-      "image": "/Theme/Brand guideline/Mock 01.jpg",
-      "description": "Designed a comprehensive visual campaign for Pakistan's leading healthcare nonprofit that reached over 50,000 people on social media and drove a 30% increase in donations during Ramadan.",
-      "client": "Siha",
+      "title": "Mehndi Clothing | Visual Identity & Campaign",
+      "category": "Brand Identity",
+      "image": "/Theme/Projects/WhatsApp Image 2023-12-28 at 3.40.15 PM.jpeg",
+      "images": [
+        "/Theme/Projects/WhatsApp Image 2023-12-28 at 3.40.15 PM (1).jpeg",
+        "/Theme/Projects/WhatsApp Image 2023-12-28 at 3.40.15 PM.jpeg"
+      ],
+      "description": "Designed premium brand identity, visual guidelines, and digital campaign templates for Mehndi Clothing, highlighting traditional wear styling and modern cultural typography.",
+      "client": "Mehndi Clothing",
       "year": "2024",
-      "role": "Creative Designer",
-      "likes": 284,
-      "views": "3.2K"
+      "role": "Brand Designer",
+      "likes": null,
+      "views": null,
+      "skills": [
+        "Social Media Post Design",
+        "Brand Identity Design"
+      ]
     },
     {
       "id": 5,
-      "title": "LOOP MEDIA — Continuity in Design",
-      "category": "Social",
+      "title": "Creative Agency | Social Media Templates",
+      "category": "Social Media",
       "image": "/Theme/Free_M_Mockups_iMac_24_Inch.jpg",
-      "description": "Built graphic templates reused across multiple client accounts, cutting production time by approximately 25%. Delivered on tight deadlines with zero revision rejections.",
+      "description": "Built uniform graphic templates and grid layouts for digital agency client accounts, standardizing their social media presence.",
       "behanceUrl": "https://www.behance.net/gallery/249646189/LOOP-MEDIA-Continuity-in-Design",
-      "client": "Ilma University",
+      "client": "Loop Media",
       "year": "2026",
-      "role": "Creative Specialist",
+      "role": "Visual Designer",
       "likes": null,
-      "views": null
-    },
-    {
-      "id": 6,
-      "title": "SIHA Organic Detox Oil | Social Media & Brand Visuals",
-      "category": "Brand",
-      "image": "/Theme/Brand guideline/Mock 01.jpg",
-      "description": "Delivered brand identity packages (logo, color system, typography) for multiple clients across e-commerce, retail, and services sectors with a 60% repeat client rate.",
-      "behanceUrl": "https://www.behance.net/gallery/249649627/SIHA-Organic-Detox-Oil-Social-Media-Brand-Visuals",
-      "client": "Siha",
-      "year": "2023",
-      "role": "Freelance Designer",
-      "likes": null,
-      "views": null
+      "views": null,
+      "skills": [
+        "Social Media Post Design",
+        "Brand Guidelines"
+      ]
     },
     {
       "id": 7,
-      "title": "Ankhahi — Short Film (1080p)",
-      "category": "Video",
+      "title": "Narrative Short Film | Cinematography & Direction",
+      "category": "Video Production",
       "image": "/videos/AnkahiThumb.png",
       "video": "/public/videos/Ankhahi_compressed.mp4",
-      "description": "A cinematic short film exploring untold stories. Full production from concept development to final color grading and delivery.",
-      "client": null,
+      "description": "A cinematic independent short film exploring human connection. Handled full production, including scripting, camera operation, and color grading.",
+      "client": "Independent Production",
       "year": "2024",
-      "role": "Director & Editor",
+      "role": "Director & Cinematographer",
       "likes": null,
-      "views": null
+      "views": null,
+      "skills": [
+        "Video Graphics & Editing",
+        "Cinematography"
+      ]
     },
     {
       "id": 8,
-      "title": "ILMA University — TVC",
-      "category": "Video",
+      "title": "Higher Education TVC | Cinematography & Editing",
+      "category": "Video Production",
       "image": "/videos/limaThub.png",
       "video": "/videos/Ilma University -TVC-English-Owais-Hassan-Bilal-Minhal-Waheel.mp4",
-      "description": "Television commercial produced for ILMA University. Handled cinematography, editing, and post-production for the English-language version.",
-      "client": "ILMA University",
+      "description": "Television commercial produced for a leading academic institution. Directed cinematography, post-production editing, and sound design.",
+      "client": "Ilma University",
       "year": "2025",
-      "role": "Cinematographer & Editor",
+      "role": "Cinematographer & Video Editor",
       "likes": null,
-      "views": null
+      "views": null,
+      "skills": [
+        "Video Graphics & Editing",
+        "Cinematography"
+      ]
     },
     {
       "id": 3,
-      "title": "Brand Story — gif",
-      "category": "Video",
+      "title": "Nonprofit Storytelling | Motion Graphics & Video",
+      "category": "Video Production",
       "image": "/videos/NexaThumb.png",
       "video": "/videos/0934.mp4",
-      "description": "Short-form video content for social media that increased average post engagement by 70% compared to the previous quarter. From concept to final cut.",
+      "description": "Short-form brand narrative video showcasing community impact programs, utilizing documentary editing style and custom motion graphics.",
       "client": "Patients' Aid Foundation",
       "year": "2023",
-      "role": "Videographer & Editor",
+      "role": "Videographer & Video Editor",
       "likes": null,
-      "views": null
+      "views": null,
+      "skills": [
+        "Video Graphics & Editing",
+        "Motion Graphics"
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Academic Event | Visual Identity & Collateral",
+      "category": "Print Design",
+      "image": "/Theme/Projects/MOCKup 03.jpg",
+      "images": [
+        "/Theme/Projects/MOCKup 03.jpg",
+        "/Theme/Projects/MOCKup.jpg",
+        "/Theme/Projects/MOCKup 02.jpg",
+        "/Theme/Projects/MOCKup 04.jpg"
+      ],
+      "description": "Designed a comprehensive print identity suite for a healthcare academy event, including a large-format outdoor billboard campaign, informative roll-up banners, custom formal invitation layouts, and elegant honors appreciation certificates.",
+      "client": "Oxford College of Nursing",
+      "year": "2024",
+      "role": "Lead Graphic Designer",
+      "likes": null,
+      "views": null,
+      "skills": [
+        "Print & Layout Design",
+        "Billboard & Advertising",
+        "Stationery Design",
+        "Typography Design"
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Luxury Apparel | Web Banner Design",
+      "category": "Brand Identity",
+      "image": "/Theme/Projects/MOCKup 05.jpg",
+      "description": "Designed a minimalist and elegant e-commerce landing page hero banner for a premium silk scarf collection, showcasing product styling and modern typography.",
+      "client": "Feline Fashion",
+      "year": "2024",
+      "role": "UI/UX & Web Designer",
+      "likes": null,
+      "views": null,
+      "skills": [
+        "UI/UX Design",
+        "E-Commerce Web Design"
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Fashion Retail | Seasonal Ad Campaign I",
+      "category": "Social Media",
+      "image": "/Theme/Projects/Artboard 1.png",
+      "description": "A compilation of promotional social media campaigns designed for a retail clothing brand, featuring 11.11, Summer Clearance, and seasonal sales.",
+      "client": "Prime Point",
+      "year": "2023",
+      "role": "Graphic Designer",
+      "likes": null,
+      "views": null,
+      "skills": [
+        "Social Media Post Design",
+        "Retail Campaign Design"
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Fashion Retail | Seasonal Ad Campaign II",
+      "category": "Social Media",
+      "image": "/Theme/Projects/Artboard 2.png",
+      "description": "Designed visual lookbooks and campaign banners for seasonal viscose, khaddar, and premium velvet clothing collections across digital channels.",
+      "client": "Prime Point",
+      "year": "2023",
+      "role": "Graphic Designer",
+      "likes": null,
+      "views": null,
+      "skills": [
+        "Social Media Post Design",
+        "Retail Campaign Design"
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Skincare & Beauty | Social Media Graphics",
+      "category": "Social Media",
+      "image": "/Theme/Projects/Artboard 3.png",
+      "description": "Created promotional social media campaigns and product showcase posts for skincare and cosmetics retail brands.",
+      "client": "BioMiracle / Cosmetic Candy",
+      "year": "2023",
+      "role": "Graphic Designer",
+      "likes": null,
+      "views": null,
+      "skills": [
+        "Social Media Post Design",
+        "Product Ad Design"
+      ]
+    },
+    {
+      "id": 17,
+      "title": "Digital Agency | Services Carousel Design",
+      "category": "Social Media",
+      "image": "/Theme/Projects/Fiverr Gig.jpg",
+      "description": "Designed a cohesive set of social media posts, carousel designs, and digital ad banners showcasing digital marketing, SEO, and web development services.",
+      "client": "Kolachi Resource Hub",
+      "year": "2023",
+      "role": "Graphic Designer",
+      "likes": null,
+      "views": null,
+      "skills": [
+        "Social Media Post Design",
+        "Digital Banner Design"
+      ]
+    },
+    {
+      "id": 18,
+      "title": "Creative Studio | Services Portfolio Banner",
+      "category": "Social Media",
+      "image": "/Theme/Projects/Graphic Design Banner gig.jpg",
+      "description": "A promotional banner designed for freelance platforms, showcasing a collage of diverse client projects ranging from real estate 3D designs to app promotions.",
+      "client": "Freelance Portfolio",
+      "year": "2024",
+      "role": "Graphic Designer",
+      "likes": null,
+      "views": null,
+      "skills": [
+        "Social Media Post Design",
+        "Brand Promotion Design"
+      ]
+    },
+    {
+      "id": 19,
+      "title": "Cosmetics Brand | Social Ad Creatives",
+      "category": "Social Media",
+      "image": "/Theme/Projects/Portfolio 4.png",
+      "description": "Cosmetics social media posts collection collage for major retail beauty brands, highlighting promotions and discounts.",
+      "client": "Cosmetics Brands",
+      "year": "2024",
+      "role": "Graphic Designer",
+      "likes": null,
+      "views": null,
+      "skills": [
+        "Social Media Post Design",
+        "Ad Campaign Design"
+      ]
+    },
+    {
+      "id": 20,
+      "title": "Urban Footwear | Mobile App UI/UX",
+      "category": "Brand Identity",
+      "image": "/Theme/Projects/Portfolio 5.png",
+      "description": "Full UI/UX design project for a sneaker retail mobile application named 'USESHOES', featuring splash screens, product search grids, and a checkout cart.",
+      "client": "USESHOES",
+      "year": "2025",
+      "role": "UI/UX & Mobile Designer",
+      "likes": null,
+      "views": null,
+      "skills": [
+        "UI/UX Design",
+        "Mobile App Design"
+      ]
+    },
+    {
+      "id": 21,
+      "title": "Textile Recruitment | Subway Station Billboard",
+      "category": "Print Design",
+      "image": "/Theme/Projects/Portfolio banner.jpg",
+      "description": "Designed a large-format subway station exhibition and recruitment billboard campaign for a textile manufacturer.",
+      "client": "Irteqa Textiles",
+      "year": "2024",
+      "role": "Creative Designer",
+      "likes": null,
+      "views": null,
+      "skills": [
+        "Billboard & Advertising",
+        "Exhibition Poster Design"
+      ]
+    },
+    {
+      "id": 22,
+      "title": "Real Estate Marketing | YouTube Visuals",
+      "category": "Social Media",
+      "image": "/Theme/Projects/Portfolio thumbnail.png",
+      "description": "Designed a series of highly engaging, high-contrast YouTube thumbnails for a real estate agency, promoting luxury house walkthrough tours.",
+      "client": "Abul Qasim Real Estate",
+      "year": "2024",
+      "role": "Creative Designer",
+      "likes": null,
+      "views": null,
+      "skills": [
+        "YouTube Thumbnail Design",
+        "Social Media Post Design"
+      ]
+    },
+    {
+      "id": 23,
+      "title": "Social Media Agency | Promotional Showcase",
+      "category": "Social Media",
+      "image": "/Theme/Projects/Social media post mockup design.jpg",
+      "description": "A services showcase banner displaying a grid of custom-designed social media posts for real estate, cosmetics, food, and corporate brands.",
+      "client": "Social Media Services",
+      "year": "2024",
+      "role": "Social Media Specialist",
+      "likes": null,
+      "views": null,
+      "skills": [
+        "Social Media Post Design",
+        "Brand Promotion Design"
+      ]
+    },
+    {
+      "id": 24,
+      "title": "Modern Glazing | Social Media Campaign",
+      "category": "Social Media",
+      "image": "/Theme/Projects/VOL 04.jpg",
+      "description": "A comprehensive social media marketing campaign designed for Braham Glazing, a London-based UPVC doors and windows provider, showcasing product features, eco-friendly benefits, and soundproofing solutions.",
+      "client": "Braham Glazing",
+      "year": "2024",
+      "role": "Graphic Designer",
+      "likes": null,
+      "views": null,
+      "skills": [
+        "Social Media Post Design",
+        "Ad Campaign Design"
+      ]
     }
   ],
   "projectCategories": [
     "All",
-    "Brand",
-    "Social",
-    "Video",
-    "Print"
+    "Brand Identity",
+    "Social Media",
+    "Video Production",
+    "Print Design"
   ],
   "experience": [
     {

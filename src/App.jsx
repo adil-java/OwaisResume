@@ -36,7 +36,7 @@ function App() {
         <About />
         <Experience />
         <Portfolio onProjectClick={setSelectedProject} />
-        <Skills />
+        <Skills onProjectClick={setSelectedProject} />
         <Contact />
       </main>
       <Footer />

@@ -1,61 +1,83 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import data from '../data/data.json'
 
 gsap.registerPlugin(ScrollTrigger)
 
-function ProjectMedia({ project, isHero }) {
-  /* Hero scroll track */
-  if (isHero) {
-    return (
-      <div className="project-scroll-track" aria-hidden="true">
-        <img src="/scroll/Book Mockup.png" alt="" />
-        <img src="/scroll/Free_M_Mockups_iMac_24_Inch.jpg" alt="" />
-        <img src="/scroll/Mock 01.jpg" alt="" />
-        <img src="/scroll/Screenshot 2026-05-28 221257.png" alt="" />
-        <img src="/scroll/Screenshot 2026-05-28 222533.png" alt="" />
-        <img src="/videos/AnkahiThumb.png" alt="" />
-        <img src="/videos/limaThub.png" alt="" />
-        <img src="/videos/NexaThumb.png" alt="" />
-        <img src="/scroll/Book Mockup.png" alt="" />
-        <img src="/scroll/Free_M_Mockups_iMac_24_Inch.jpg" alt="" />
-        <img src="/scroll/Mock 01.jpg" alt="" />
-        <img src="/scroll/Screenshot 2026-05-28 221257.png" alt="" />
-        <img src="/scroll/Screenshot 2026-05-28 222533.png" alt="" />
-        <img src="/videos/AnkahiThumb.png" alt="" />
-        <img src="/videos/limaThub.png" alt="" />
-        <img src="/videos/NexaThumb.png" alt="" />
-      </div>
-    )
-  }
-
-  /* Render static thumbnail for all other cards */
+function ProjectMedia({ project }) {
+  /* Render static thumbnail for all cards */
   return <img src={project.image} alt={project.title} loading="lazy" />
 }
 
 export default function Portfolio({ onProjectClick }) {
   const gridRef = useRef(null)
+  const [activeCategory, setActiveCategory] = useState('All')
+  const [isMobile, setIsMobile] = useState(false)
+  const [showAll, setShowAll] = useState(false)
+  const isFirstRender = useRef(true)
 
   useEffect(() => {
-    const ctx = gsap.context(() => {
-      gsap.from('.project-card', {
-        scrollTrigger: {
-          trigger: '.portfolio-grid',
-          start: 'top',
-        },
-        y: 50,
-        duration: 0.7,
-        ease: 'power3.out',
-        stagger: 0.1,
-      })
-    }, gridRef)
-
-    return () => ctx.revert()
+    const checkMobile = () => setIsMobile(window.innerWidth <= 768)
+    checkMobile()
+    window.addEventListener('resize', checkMobile)
+    return () => window.removeEventListener('resize', checkMobile)
   }, [])
+
+  const handleCategoryChange = (category) => {
+    setActiveCategory(category)
+    setShowAll(false)
+  }
+
+  useEffect(() => {
+    if (isFirstRender.current) {
+      // Entrance animation on first scroll-into-view
+      const ctx = gsap.context(() => {
+        gsap.from('.project-card', {
+          scrollTrigger: {
+            trigger: gridRef.current,
+            start: 'top 85%',
+          },
+          y: 50,
+          opacity: 0,
+          duration: 0.7,
+          ease: 'power3.out',
+          stagger: 0.1,
+        })
+      }, gridRef)
+      isFirstRender.current = false
+      return () => ctx.revert()
+    } else {
+      // Transition animation when category is changed or "See More" clicked
+      const ctx = gsap.context(() => {
+        gsap.fromTo('.project-card',
+          { y: 30, opacity: 0 },
+          { y: 0, opacity: 1, duration: 0.6, ease: 'power3.out', stagger: 0.05 }
+        )
+      }, gridRef)
+      return () => ctx.revert()
+    }
+  }, [activeCategory, showAll])
+
+  const baseFiltered = data.projects.filter(
+    (project) => activeCategory === 'All' || project.category === activeCategory
+  )
+
+  // Push video projects to the end when viewing "All" category
+  const filteredProjects = activeCategory === 'All'
+    ? [...baseFiltered.filter(p => !p.video), ...baseFiltered.filter(p => !!p.video)]
+    : baseFiltered
+
+  const displayProjects = isMobile && !showAll && activeCategory === 'All'
+    ? filteredProjects.slice(0, 6)
+    : filteredProjects
 
   return (
     <section className="section" id="portfolio">
+      <div className="glass-blob blob-1"></div>
+      <div className="glass-blob blob-2"></div>
+      <div className="glass-blob blob-3"></div>
+
       <div className="container">
         <div className="portfolio-header">
           <div>
@@ -66,11 +88,21 @@ export default function Portfolio({ onProjectClick }) {
               crafted for organizations that want to make a real impression.
             </p>
           </div>
+          <div className="portfolio-filters">
+            {data.projectCategories.map((category) => (
+              <button
+                key={category}
+                className={`filter-btn ${activeCategory === category ? 'active' : ''}`}
+                onClick={() => handleCategoryChange(category)}
+              >
+                {category}
+              </button>
+            ))}
+          </div>
         </div>
 
-        <div className="portfolio-grid is-all" ref={gridRef}>
-          {data.projects.map((project, index) => {
-            const isHero = index === 0
+        <div className="portfolio-grid" ref={gridRef}>
+          {displayProjects.map((project) => {
             const hasVideo = !!project.video
 
             return (
@@ -80,8 +112,8 @@ export default function Portfolio({ onProjectClick }) {
                 onClick={() => onProjectClick(project)}
                 id={`project-${project.id}`}
               >
-                <div className={`project-image ${isHero ? 'scroll-image' : ''}`}>
-                  <ProjectMedia project={project} isHero={isHero} />
+                <div className="project-image">
+                  <ProjectMedia project={project} />
                   {hasVideo && (
                     <div className="video-badge">
                       <svg width="10" height="10" viewBox="0 0 24 24" fill="white">
@@ -91,27 +123,33 @@ export default function Portfolio({ onProjectClick }) {
                     </div>
                   )}
                 </div>
-                {!isHero && (
-                  <>
-                    <div className="project-info">
-                      <h3>{project.title}</h3>
-                      <span className="project-category">{project.category} Design</span>
-                    </div>
-                    {(project.likes || project.views) && (
-                      <div className="project-meta">
-                        <span className="project-likes">
-                          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-                          </svg>
-                        </span>
+                <div className="project-info">
+                  <h3>{project.title}</h3>
+                  <div className="project-meta-row">
+                    <span className="project-category">{project.category}</span>
+                    {project.skills && (
+                      <div className="project-skills">
+                        {project.skills.slice(0, 2).map((skill) => (
+                          <span key={skill} className="project-skill-tag">
+                            {skill}
+                          </span>
+                        ))}
                       </div>
                     )}
-                  </>
-                )}
+                  </div>
+                </div>
               </div>
             )
           })}
         </div>
+
+        {isMobile && !showAll && activeCategory === 'All' && filteredProjects.length > 6 && (
+          <div style={{ display: 'flex', justifyContent: 'center', marginTop: 'var(--space-2xl)' }}>
+            <button className="btn-secondary" onClick={() => setShowAll(true)}>
+              See More Projects
+            </button>
+          </div>
+        )}
       </div>
     </section>
   )

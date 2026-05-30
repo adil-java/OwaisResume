@@ -16,7 +16,11 @@ const floatingIcons = [
 
 export default function Hero() {
   const heroRef = useRef(null)
-  const featured = data.projects.slice(0, 3)
+  const featured = [
+    data.projects.find(p => p.image === '/Theme/Projects/Fiverr Gig.jpg'),
+    data.projects.find(p => p.image === '/Theme/Projects/Social media post mockup design.jpg'),
+    data.projects.find(p => p.image === '/Theme/Projects/VOL 04.jpg')
+  ].filter(Boolean)
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -149,7 +153,7 @@ export default function Hero() {
             </p>
 
             <div className="hero-actions">
-              <button className="btn-primary" active onClick={() => window.open('https://www.behance.net/owaisjavaid', '_blank')}>
+              <button className="btn-primary" onClick={() => window.open('https://www.behance.net/owaisjavaid', '_blank')}>
                 View My Work
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M7 17l9.2-9.2M17 17V7H7" />
@@ -165,7 +169,10 @@ export default function Hero() {
               {data.stats.map((stat, i) => (
                 <div className="hero-stat" key={i}>
                   <div className="number">{stat.number}</div>
-                  <div className="label">{stat.label}</div>
+                  <div className="label">
+                    {stat.label}
+                    {stat.context && <span className="stat-context">{stat.context}</span>}
+                  </div>
                 </div>
               ))}
             </div>

@@ -12,20 +12,17 @@ export default function Navbar() {
   }, [])
 
   useEffect(() => {
-    if (menuOpen) {
-      document.body.style.overflow = 'hidden'
-    } else {
-      document.body.style.overflow = ''
-    }
-    return () => {
-      document.body.style.overflow = ''
-    }
+    // Menu body scroll lock removed to prevent jumping on mobile
   }, [menuOpen])
 
   const scrollTo = (id) => {
     setMenuOpen(false)
-    const el = document.getElementById(id)
-    if (el) el.scrollIntoView({ behavior: 'smooth' })
+    // Small timeout to allow the mobile menu animation to start closing
+    // and release the body overflow lock before executing the smooth scroll.
+    setTimeout(() => {
+      const el = document.getElementById(id)
+      if (el) el.scrollIntoView({ behavior: 'smooth' })
+    }, 180)
   }
 
   return (

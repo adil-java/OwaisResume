@@ -1,7 +1,13 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 export default function ProjectModal({ project, onClose }) {
   const videoRef = useRef(null)
+  const [activeImgIndex, setActiveImgIndex] = useState(0)
+
+  // Reset image slider index when project changes
+  useEffect(() => {
+    setActiveImgIndex(0)
+  }, [project])
 
   useEffect(() => {
     const handleEsc = (e) => {
@@ -34,6 +40,37 @@ export default function ProjectModal({ project, onClose }) {
                 muted
                 poster={project.image}
               />
+            ) : project.images && project.images.length > 0 ? (
+              <div className="modal-slider">
+                <div
+                  className="modal-slider-track"
+                  onScroll={(e) => {
+                    const track = e.currentTarget
+                    const index = Math.round(track.scrollLeft / track.clientWidth)
+                    setActiveImgIndex(index)
+                  }}
+                >
+                  {project.images.map((imgUrl, idx) => (
+                    <div className="modal-slide" key={idx}>
+                      <img
+                        className="modal-image slide-image"
+                        src={imgUrl}
+                        alt={`${project.title} - Slide ${idx + 1}`}
+                      />
+                    </div>
+                  ))}
+                </div>
+                {project.images.length > 1 && (
+                  <div className="modal-slider-dots">
+                    {project.images.map((_, idx) => (
+                      <span
+                        key={idx}
+                        className={`slider-dot ${activeImgIndex === idx ? 'active' : ''}`}
+                      ></span>
+                    ))}
+                  </div>
+                )}
+              </div>
             ) : (
               <img
                 className="modal-image"
@@ -43,7 +80,18 @@ export default function ProjectModal({ project, onClose }) {
             )}
             <div className="modal-content">
               <h2>{project.title}</h2>
-              <div className="modal-category">{project.category} Design</div>
+              <div className="modal-category-row">
+                <span className="modal-category">{project.category}</span>
+                {project.skills && (
+                  <div className="modal-skills">
+                    {project.skills.map((skill) => (
+                      <span key={skill} className="modal-skill-tag">
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
+                )}
+              </div>
               <p>{project.description}</p>
 
               {project.behanceUrl && (
@@ -74,12 +122,6 @@ export default function ProjectModal({ project, onClose }) {
                   <span className="detail-label">Role</span>
                   <span className="detail-value">{project.role}</span>
                 </div>
-                {project.likes && (
-                  <div className="modal-detail-item">
-                    <span className="detail-label">Appreciations</span>
-                    <span className="detail-value">{project.likes}</span>
-                  </div>
-                )}
               </div>
             </div>
           </div>

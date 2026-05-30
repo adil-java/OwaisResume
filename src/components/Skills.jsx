@@ -1,6 +1,5 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import data from '../data/data.json'
 
 const toolIconImages = {
@@ -15,99 +14,133 @@ const toolIconImages = {
   fg: '/Theme/skills/figma-logo-icon-figma-app-editable-transparent-background-premium-social-media-design-for-digital-download-free-png.webp'
 }
 
-gsap.registerPlugin(ScrollTrigger)
+// Professional human-crafted descriptions for each capability
+const skillDescriptions = {
+  "Brand Identity": "Visual identity design, logo mark construction, color systems, and corporate typography rules.",
+  "Visual Systems": "Creating design frameworks that scale consistently across print, digital, and social formats.",
+  "Typography": "Expressive display lettering, grid-based typesetting, and visual editorial layouts.",
+  "Layout & Composition": "Designing spatial hierarchies for large-format outdoor billboards and high-traffic marketing.",
+  "Cinematography": "Camera direction, scene lighting, frame composition, and raw footage capture.",
+  "Video Editing": "Short-form advertising, TVC editing, sound integration, and pacing narrative cuts.",
+  "Motion Graphics": "Kinetic typography, animated logo marks, title sequences, and graphic video overlays.",
+  "Color Grading": "Color matching multi-camera footage, creating custom styles, and lookup tables (LUTs).",
+  "Social Media Design": "Curating platform-specific templates, grid aesthetics, and performance-based assets.",
+  "Campaign Creatives": "Promotional campaign banners, clearance sale creatives, and paid acquisition designs.",
+  "Content Strategy": "Translating core brand missions and marketing goals into engaging digital storytelling layouts.",
+  "Print Design": "Large-format outdoor banners, rollup displays, formal invitation sets, and corporate certificates."
+}
 
-export default function Skills() {
+// Domain structures for outcomes-based navigation
+const domains = [
+  {
+    id: "design",
+    label: "Brand & Visual Identity",
+    icon: "🎨",
+    skills: ["Brand Identity", "Visual Systems", "Typography", "Layout & Composition"],
+    tools: ["ps", "ai", "fg", "id"],
+    featuredProjectId: 1 // Mehndi Clothing
+  },
+  {
+    id: "video",
+    label: "Video & Motion Storytelling",
+    icon: "🎬",
+    skills: ["Cinematography", "Video Editing", "Motion Graphics", "Color Grading"],
+    tools: ["pr", "ae", "dv", "au"],
+    featuredProjectId: 7 // Narrative Short Film
+  },
+  {
+    id: "marketing",
+    label: "Digital Content & Strategy",
+    icon: "📱",
+    skills: ["Social Media Design", "Campaign Creatives", "Content Strategy", "Print Design"],
+    tools: ["cv", "ps", "ai", "fg", "id"],
+    featuredProjectId: 24 // Modern Glazing
+  }
+]
+
+export default function Skills({ onProjectClick }) {
   const sectionRef = useRef(null)
+  const [activeTab, setActiveTab] = useState(0)
 
   useEffect(() => {
-    const ctx = gsap.context(() => {
-      ScrollTrigger.create({
-        trigger: '.skills-grid',
-        start: 'top ',
-        onEnter: () => {
-          document.querySelectorAll('.skill-bar-fill').forEach(bar => {
-            bar.classList.add('animate')
-          })
-        },
-      })
+    // Fade and slide content dynamically on active tab change
+    gsap.fromTo('.expertise-dashboard-content',
+      { opacity: 0, y: 15 },
+      { opacity: 1, y: 0, duration: 0.45, ease: 'power3.out' }
+    )
+  }, [activeTab])
 
-      gsap.from('.skill-group', {
-        scrollTrigger: {
-          trigger: '.skills-grid',
-          start: 'top 80%',
-        },
-        y: 40,
-
-        duration: 0.7,
-        ease: 'power3.out',
-        stagger: 0.12,
-      })
-
-      gsap.from('.tool-badge', {
-        scrollTrigger: {
-          trigger: '.tools-grid',
-          start: 'top 85%',
-        },
-        y: 20,
-
-        duration: 0.5,
-        ease: 'power3.out',
-        stagger: 0.08,
-      })
-    }, sectionRef)
-
-    return () => ctx.revert()
-  }, [])
+  const currentDomain = domains[activeTab]
 
   return (
     <section className="section" id="skills" ref={sectionRef}>
-      <div className="container">
+      <div className="container" style={{ position: 'relative', zIndex: 2 }}>
         <span className="section-label">Expertise</span>
-        <h2 className="section-title">Skills & Tools</h2>
-        <p className="section-subtitle" style={{ marginBottom: 'var(--space-3xl)' }}>
-          Years of hands-on experience across design, video, and digital marketing.
+        <h2 className="section-title">Skills & Experience</h2>
+        <p className="section-subtitle" style={{ marginBottom: 'var(--space-2xl)' }}>
+          A structured breakdown of core visual design competencies and the creative software used to deliver outcomes.
         </p>
 
-        <div className="skills-grid">
-          {data.skillGroups.map((group, i) => (
-            <div className="skill-group" key={i}>
-              <h3><span>{group.icon}</span> {group.title}</h3>
-              {group.skills.map((skill, j) => (
-                <div className="skill-bar-container" key={j}>
-                  <div className="skill-bar-label">
-                    <span>{skill.name}</span>
-                    <span>{skill.level}%</span>
-                  </div>
-                  <div className="skill-bar">
-                    <div
-                      className="skill-bar-fill"
-                      style={{ width: `${skill.level}%` }}
-                    ></div>
-                  </div>
+        {/* Dashboard Tab Selector */}
+        <div className="expertise-tabs">
+          {domains.map((domain, index) => (
+            <button
+              key={domain.id}
+              className={`expertise-tab-btn ${activeTab === index ? 'active' : ''}`}
+              onClick={() => setActiveTab(index)}
+            >
+              <span className="tab-icon">{domain.icon}</span>
+              <span className="tab-label">{domain.label}</span>
+            </button>
+          ))}
+        </div>
+
+        {/* Dashboard Grid Content */}
+        <div className="expertise-dashboard-content">
+          {/* Left Column: Creative Competencies */}
+          <div className="expertise-left-col">
+            <h3 className="dashboard-column-title">Core Competencies</h3>
+            <div className="expertise-capabilities-stack">
+              {currentDomain.skills.map((skillName, idx) => (
+                <div className="expertise-capability-card" key={idx}>
+                  <h4 className="capability-name">{skillName}</h4>
+                  <p className="capability-description">
+                    {skillDescriptions[skillName] || 'Advanced visualization and creative asset delivery.'}
+                  </p>
                 </div>
               ))}
             </div>
-          ))}
-        </div>
-        <div className="tools-grid">
-          {data.tools.map((tool, i) => (
-            <div className="tool-badge" key={i} id={`tool-${tool.className}`}>
-              <div className={`tool-icon ${tool.className} ${toolIconImages[tool.className] ? 'has-custom-img' : ''}`}>
-                {toolIconImages[tool.className] ? (
-                  <img src={toolIconImages[tool.className]} alt={tool.name} className="tool-brand-img" />
-                ) : (
-                  tool.icon
-                )}
-              </div>
-              <div>
-                <div className="tool-name">{tool.name}</div>
-                <div className="tool-level">{tool.level}</div>
+          </div>
+
+          {/* Right Column: Toolkit and Project Outcomes */}
+          <div className="expertise-right-col">
+            {/* Top Widget: Core Tools */}
+            <div className="expertise-deck-card tools-deck">
+              <h3 className="dashboard-column-title">Core Software</h3>
+              <div className="expertise-tools-grid">
+                {currentDomain.tools.map((toolClassName) => {
+                  const tool = data.tools.find(t => t.className === toolClassName)
+                  if (!tool) return null
+                  return (
+                    <div className={`tool-badge-pill ${toolClassName}`} key={toolClassName}>
+                      <div className="tool-icon-mini">
+                        <img src={toolIconImages[toolClassName]} alt={tool.name} className="tool-brand-img" />
+                      </div>
+                      <div className="tool-info-mini">
+                        <div className="tool-name-mini">{tool.name}</div>
+                        <div className="tool-level-mini">{tool.level}</div>
+                      </div>
+                    </div>
+                  )
+                })}
               </div>
             </div>
-          ))}
+          </div>
         </div>
       </div>
     </section>
   )
 }
+
+
+
