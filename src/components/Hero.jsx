@@ -17,8 +17,8 @@ const floatingIcons = [
 export default function Hero() {
   const heroRef = useRef(null)
   const featured = [
-    data.projects.find(p => p.image === '/Theme/Projects/Fiverr Gig.jpg'),
-    data.projects.find(p => p.image === '/Theme/Projects/Social media post mockup design.jpg'),
+    data.projects.find(p => p.image === 'https://res.cloudinary.com/dyzxi9opa/image/upload/v1780340391/Fiverr_Gig_v5syvd.jpg'),
+    data.projects.find(p => p.image === 'https://res.cloudinary.com/dyzxi9opa/image/upload/v1780340416/Social_media_post_mockup_design_quvyw9.jpg'),
     data.projects.find(p => p.image === '/Theme/Projects/VOL 04.jpg')
   ].filter(Boolean)
 
