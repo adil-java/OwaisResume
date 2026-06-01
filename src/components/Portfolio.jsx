@@ -33,17 +33,21 @@ export default function Portfolio({ onProjectClick }) {
     if (isFirstRender.current) {
       // Entrance animation on first scroll-into-view
       const ctx = gsap.context(() => {
-        gsap.from('.project-card', {
-          scrollTrigger: {
-            trigger: gridRef.current,
-            start: 'top 85%',
-          },
-          y: 50,
-          opacity: 0,
-          duration: 0.5,
-          ease: 'power3.out',
-          stagger: 0.05,
-        })
+        gsap.fromTo('.project-card',
+          { y: 50 },
+          {
+            scrollTrigger: {
+              trigger: gridRef.current,
+              start: 'top ',
+              once: true,
+            },
+            y: 0,
+            opacity: 1,
+            duration: 0.5,
+            ease: 'power3.out',
+            stagger: 0.05,
+          }
+        )
       }, gridRef)
       isFirstRender.current = false
       return () => ctx.revert()
@@ -51,7 +55,7 @@ export default function Portfolio({ onProjectClick }) {
       // Transition animation when category is changed or "See More" clicked
       const ctx = gsap.context(() => {
         gsap.fromTo('.project-card',
-          { y: 30, opacity: 0 },
+          { y: 30 },
           { y: 0, opacity: 1, duration: 0.6, ease: 'power3.out', stagger: 0.05 }
         )
       }, gridRef)
