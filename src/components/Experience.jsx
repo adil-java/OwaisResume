@@ -7,11 +7,12 @@ gsap.registerPlugin(ScrollTrigger)
 
 // Map custom visual tags to each company to enhance detail
 const companyTags = {
-  "Patients' Aid Foundation": ["Visual Campaigns", "Brand Language", "Video Production", "Social Media Engagement"],
-  "Digital Expanders Agency": ["Performance Creatives", "Paid Social Ads", "Asset Templates", "Collaboration"],
-  "Kolachi Resource Hub": ["Branded Collateral", "Brochures & Banners", "Internal Comms", "Client Review"],
-  "DigiKal": ["Identity Packages", "Logo & Color Systems", "Content Calendars", "Client Management"],
-  "Lakhani Solution": ["Graphic Deliverables", "Corporate Branding", "Adobe Suite", "Visual Concepts"]
+  "Patients' Aid Foundation – JPMC": ["Visual Campaigns", "Video Production", "AI-Powered Workflows", "Fundraising Materials"],
+  "Digital Expanders": ["Digital Campaigns", "Short-form Video", "Multi-platform Content", "UK Clients"],
+  "Kolachi Resource Hub": ["Social Media Campaigns", "Web Banners", "Marketing Collateral", "Integrated Campaigns"],
+  "Lakhani Solution": ["Brand Identity", "100+ Clients", "Print & Digital", "Client Consultations"],
+  "Digikal Media": ["Social Media Creatives", "Web Graphics", "Campaign Development", "Brand Strategy"],
+  "The Elegance": ["Premium Visuals", "Video Production", "Product Campaigns", "Luxury Branding"]
 }
 
 export default function Experience() {

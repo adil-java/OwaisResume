@@ -799,7 +799,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .mobile-menu.open .nav-link:nth-child(5) { transition-delay: 0.3s; }
 
-.mobile-menu.open .theme-toggle { transition-delay: 0.35s; }
+.mobile-menu.open .theme-toggle { transition-delay: 0.4s; }
 
 
 
@@ -1442,6 +1442,93 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+/* Download CV Button — Hero */
+
+.btn-download-cv {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: 14px 28px;
+  background: linear-gradient(135deg, var(--color-accent), var(--color-forest));
+  color: #fff;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: none;
+  border-radius: var(--radius-full);
+  text-decoration: none;
+  transition: all var(--transition-base);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(31, 91, 255, 0.3);
+  cursor: pointer;
+}
+
+.btn-download-cv::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.15), transparent);
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+}
+
+.btn-download-cv:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 36px rgba(31, 91, 255, 0.4);
+}
+
+.btn-download-cv:hover::before {
+  opacity: 1;
+}
+
+.btn-download-cv:active {
+  transform: translateY(0);
+}
+
+.btn-download-cv svg {
+  flex-shrink: 0;
+  animation: downloadBounce 2s ease-in-out infinite;
+}
+
+@keyframes downloadBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(2px); }
+}
+
+/* Download CV Button — Mobile Menu */
+
+.mobile-download-cv {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 36px;
+  background: linear-gradient(135deg, var(--color-accent), var(--color-forest));
+  color: #fff;
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: var(--radius-full);
+  text-decoration: none;
+  transition: all var(--transition-base);
+  box-shadow: 0 8px 24px rgba(31, 91, 255, 0.3);
+  margin-top: var(--space-sm);
+  opacity: 0;
+  transform: translateY(16px);
+}
+
+.mobile-menu.open .mobile-download-cv {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.35s;
+}
+
+.mobile-download-cv:hover {
+  box-shadow: 0 14px 36px rgba(31, 91, 255, 0.45);
+  transform: translateY(-2px);
+}
 
 .hero-stats {
 

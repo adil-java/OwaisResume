@@ -2,14 +2,14 @@
   "personal": {
     "name": "Owais Javaid",
     "firstName": "Owais",
-    "title": "Creative Designer & Visual Storyteller",
+    "title": "Senior Creative Designer & Visual Storyteller",
     "tagline": [
       "I Make Brands",
       "Look Like They",
       "Mean It."
     ],
     "badge": "Available for projects",
-    "description": "Creative Designer & Visual Storyteller based in Karachi. I craft brand identities, design campaigns, and produce video content that makes organizations unforgettable.",
+    "description": "Senior Creative Designer with 5+ years of experience delivering high-impact visual communication, brand identity systems, video production, motion graphics, and AI-powered creative solutions across NGO, agency, and corporate environments.",
     "email": "owaisjavaid90@gmail.com",
     "phone": "+923342991996",
     "phoneFormatted": "+92 334 299 1996",
@@ -17,21 +17,21 @@
     "linkedin": "https://www.linkedin.com/in/owais-javaid",
     "linkedinDisplay": "linkedin.com/in/owais-javaid",
     "bio": [
-      "I'm Owais Javaid, a Creative Designer and Visual Storyteller based in Karachi, Pakistan. Over the past 4+ years, I've been making sure the right message reaches the right people — beautifully.",
-      "My work spans brand identity, graphic design, video production, and digital content, built for organizations that want to make a real impression. Currently, I'm at Patients' Aid Foundation, where I translate a life-saving healthcare mission into compelling visual campaigns."
+      "I'm Owais Javaid, a Senior Creative Designer and Visual Storyteller based in Karachi, Pakistan. Over the past 5+ years, I've been delivering high-impact visual communication, brand identity systems, video production, and AI-powered creative solutions across NGO, agency, and corporate environments.",
+      "My work spans brand identity, graphic design, video production, motion graphics, and digital content — built for organizations that want to make a real impression. Currently, I'm at Patients' Aid Foundation, where I translate a life-saving healthcare mission into compelling visual campaigns, leveraging AI-powered tools to accelerate creative production workflows."
     ],
     "quote": "I don't just make things look good. I ask: what do we want people to feel? What action should they take? Then I design backward from that answer.",
-    "contactCTA": "If you're a nonprofit, startup, or brand that needs a designer who cares about the work as much as you do — let's talk."
+    "contactCTA": "If you're a nonprofit, startup, or brand that needs a designer who cares about the work as much as you do — let's talk.",
+    "cvUrl": "/cv/OwaisJavaid_Resume.pdf"
   },
   "stats": [
     {
-      "number": "4+ ",
+      "number": "5+ ",
       "label": "Years Experience"
     },
     {
-      "number": "50K+",
-      "label": "People Reached ",
-      "context": "Patients' Aid Foundation"
+      "number": "500+",
+      "label": "Creative Assets Delivered"
     },
     {
       "number": "30%",
@@ -376,101 +376,150 @@
   ],
   "experience": [
     {
-      "title": "Creative Designer",
-      "company": "Patients' Aid Foundation",
+      "title": "Creative Designer & Video Editor",
+      "company": "Patients' Aid Foundation – JPMC",
       "date": "April 2023 — Present",
-      "duration": "3+ years",
+      "duration": "2+ years",
       "location": "Karachi, Pakistan",
       "points": [
-        "Designed visual campaigns for Pakistan's leading healthcare nonprofit, producing assets/month across social, print, and digital channels.",
-        "Developed a consistent brand visual language across all patient-facing materials, improving campaign cohesion and donor recognition.",
-        "Produced short-form video content for social media that increased average post engagement by 70%."
+        "Design and produce marketing collateral, social media campaigns, event branding, fundraising materials, and institutional communications across digital and print platforms.",
+        "Create engaging videos, reels, testimonials, and multimedia content that strengthen donor engagement and public awareness initiatives.",
+        "Develop brand-consistent visual assets including presentations, infographics, reports, and campaign materials.",
+        "Leverage AI-powered tools including Midjourney, Adobe Firefly, Runway ML, ChatGPT, and ElevenLabs to accelerate creative production workflows.",
+        "Collaborate with internal stakeholders and external vendors to deliver high-quality creative projects from concept through final production."
       ]
     },
     {
-      "title": "Creative Specialist",
-      "company": "Digital Expanders Agency",
+      "title": "Creative Specialist (Freelance)",
+      "company": "Digital Expanders",
       "date": "February 2024 — November 2024",
       "duration": "10 months",
-      "location": "London Area, United Kingdom",
+      "location": "Remote (UK-Based Agency)",
       "points": [
-        "Designed performance-focused creatives for digital ad campaigns, supporting paid social strategies for brand clients.",
-        "Collaborated with marketing teams to translate campaign objectives into visuals — delivered on tight deadlines with zero revision rejections.",
-        "Built graphic templates reused across multiple client accounts, cutting production time by approximately 25%."
+        "Designed digital campaigns, social media creatives, and advertising assets for UK and international clients.",
+        "Produced short-form videos, reels, and motion-based content optimized for multi-platform engagement.",
+        "Collaborated with marketing teams to create visually compelling, conversion-focused campaigns.",
+        "Maintained brand consistency while delivering high-volume creative work within fast-paced agency environments."
       ]
     },
     {
       "title": "Senior Graphic Designer",
       "company": "Kolachi Resource Hub",
-      "date": "November 2023 — April 2024",
+      "date": "October 2022 — March 2023",
       "duration": "6 months",
       "location": "Karachi, Pakistan",
       "points": [
-        "Created branded marketing collateral, including brochures, banners, and digital assets for multiple brands.",
-        "Supported internal communications design needs, ensuring visual consistency across departments.",
-        "Incorporated client feedback across multiple rounds to deliver final-approved assets."
+        "Designed social media campaigns, web banners, brochures, presentations, and marketing collateral for agency clients.",
+        "Developed brand-aligned visual concepts across digital and print channels.",
+        "Collaborated with creative and account teams to execute integrated marketing campaigns.",
+        "Managed multiple projects while ensuring quality, consistency, and timely delivery."
       ]
     },
     {
-      "title": "Freelance Designer",
-      "company": "DigiKal",
-      "date": "November 2023 — December 2023",
-      "duration": "2 months",
-      "location": "Karachi, Pakistan",
-      "points": [
-        "Delivered brand identity packages (logo, color system, typography) for clients across e-commerce, retail, and services.",
-        "Managed full design lifecycle independently — from client brief to final delivery — with a 60% repeat client rate.",
-        "Created social media content calendars and visual templates that reduced content creation time by 40%."
-      ]
-    },
-    {
-      "title": "Graphic Designer",
+      "title": "Senior Graphic Designer",
       "company": "Lakhani Solution",
-      "date": "April 2021 — January 2023",
-      "duration": "1 year 10 months",
+      "date": "January 2020 — August 2022",
+      "duration": "2 years 8 months",
       "location": "Karachi, Pakistan",
       "points": [
-        "Created visually stunning graphics, logos, and branding elements for corporate clients.",
-        "Developed innovative design concepts that met and exceeded client expectations.",
-        "Proficient in Adobe Creative Suite (Photoshop, Illustrator, InDesign)."
+        "Created logos, branding materials, brochures, presentations, and marketing assets for a portfolio of 100+ clients.",
+        "Designed digital and print creatives that strengthened brand identity and communication strategies.",
+        "Conducted client consultations to transform business requirements into effective visual solutions.",
+        "Coordinated with production teams to ensure quality execution and on-time project delivery."
+      ]
+    },
+    {
+      "title": "Junior Graphic Designer",
+      "company": "Digikal Media",
+      "date": "Freelance",
+      "duration": "Freelance",
+      "location": "Karachi, Pakistan",
+      "points": [
+        "Created social media creatives, web graphics, and marketing materials for local and multinational brands.",
+        "Supported campaign development, branding initiatives, and production-ready artwork preparation.",
+        "Contributed to projects that increased audience engagement through strategic visual communication."
+      ]
+    },
+    {
+      "title": "Graphic Designer & Video Editor",
+      "company": "The Elegance",
+      "date": "Freelance",
+      "duration": "Freelance",
+      "location": "Karachi, Pakistan",
+      "points": [
+        "Designed premium product visuals, social media creatives, and promotional campaigns for luxury gifting products.",
+        "Produced marketing videos and short-form content that enhanced product presentation and audience engagement.",
+        "Developed brand-consistent creative assets aligned with marketing and sales objectives."
       ]
     }
   ],
   "education": [
     {
-      "degree": "Bachelor of Media Sciences",
-      "institution": "ILMA University",
-      "field": "Arts, Entertainment, and Media Management",
-      "year": "January 2026 - Present "
+      "degree": "Bachelor of Science (BS) in Media Sciences",
+      "institution": "Ilma University",
+      "field": "Media Sciences",
+      "year": "January 2026 — Present"
     },
     {
-      "degree": "Broadcast Media Suit",
+      "degree": "Diploma of Associate Engineer",
+      "institution": "Govt. College of Technology",
+      "field": "Computer Information Technology",
+      "year": "2016 — 2018"
+    },
+    {
+      "degree": "Pre-Engineering",
+      "institution": "Govt. Degree Science College",
+      "field": "Pre-Engineering",
+      "year": "2013 — 2015"
+    },
+    {
+      "degree": "Matriculation",
+      "institution": "The Junior Scholar Secondary School",
+      "field": "Computer Science",
+      "year": "2012"
+    }
+  ],
+  "certifications": [
+    {
+      "degree": "Master in AI-Powered Video Editing & Design",
+      "institution": "UIT University",
+      "field": "AI-Powered Creative Production",
+      "year": "2025"
+    },
+    {
+      "degree": "Diploma of Animation, Broadcast Media Suite",
       "institution": "Arena Multimedia",
       "field": "Cinematography and Film/Video Production",
       "year": "October 2023 — March 2024"
     },
     {
-      "degree": "Diploma of Visual Effects and Multimedia",
-      "institution": "NED University of Engineering and Technology",
+      "degree": "Diploma of Animation, Visual Effects and Multimedia",
+      "institution": "NED University of Engineering & Technology",
       "field": "Art/Art Studies, General",
       "year": "May 2022 — July 2023"
+    }
+  ],
+  "achievements": [
+    {
+      "title": "500+ Creative Assets Delivered",
+      "description": "Successfully produced branding materials, social campaigns, videos, event collateral, presentations, and marketing assets across NGO, agency, and corporate environments."
     },
     {
-      "degree": "Diploma of Graphic Designing",
-      "institution": "Click 5",
-      "field": "Graphic Design",
-      "year": "2021"
+      "title": "AI-Powered Creative Production",
+      "description": "Integrated Midjourney, Adobe Firefly, Runway ML, ChatGPT, and ElevenLabs into creative workflows to accelerate content production and ideation."
     },
     {
-      "degree": "Diploma of Associate Engineer",
-      "institution": "Govt College Of Technical",
-      "field": "Computer Information Technology",
-      "year": "2016 — 2018"
+      "title": "International Client Delivery",
+      "description": "Delivered creative solutions for UK-based and international clients while maintaining quality standards and meeting fast-paced deadlines."
+    },
+    {
+      "title": "Fundraising & Healthcare Campaigns",
+      "description": "Led visual communication initiatives supporting fundraising campaigns, awareness programs, and donor engagement for a leading healthcare NGO."
     }
   ],
   "skillGroups": [
     {
-      "title": "Design",
+      "title": "Graphic Design",
       "icon": "🎨",
       "skills": [
         {
@@ -505,7 +554,7 @@
         },
         {
           "name": "Motion Graphics",
-          "level": 78
+          "level": 82
         },
         {
           "name": "Color Grading",
@@ -514,9 +563,13 @@
       ]
     },
     {
-      "title": "Digital Marketing",
-      "icon": "📱",
+      "title": "AI & Digital",
+      "icon": "🤖",
       "skills": [
+        {
+          "name": "AI-Powered Design",
+          "level": 90
+        },
         {
           "name": "Social Media Design",
           "level": 94
@@ -524,10 +577,6 @@
         {
           "name": "Campaign Creatives",
           "level": 90
-        },
-        {
-          "name": "Content Strategy",
-          "level": 82
         },
         {
           "name": "Print Design",
@@ -599,6 +648,24 @@
       "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/figma.svg",
       "className": "fg",
       "level": "Intermediate"
+    },
+    {
+      "name": "Midjourney",
+      "icon": "Mj",
+      "className": "mj",
+      "level": "Advanced"
+    },
+    {
+      "name": "Adobe Firefly",
+      "icon": "Ff",
+      "className": "ff",
+      "level": "Advanced"
+    },
+    {
+      "name": "Runway ML",
+      "icon": "Rw",
+      "className": "rw",
+      "level": "Advanced"
     }
   ]
 }

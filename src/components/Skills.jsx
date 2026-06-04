@@ -24,6 +24,7 @@ const skillDescriptions = {
   "Video Editing": "Short-form advertising, TVC editing, sound integration, and pacing narrative cuts.",
   "Motion Graphics": "Kinetic typography, animated logo marks, title sequences, and graphic video overlays.",
   "Color Grading": "Color matching multi-camera footage, creating custom styles, and lookup tables (LUTs).",
+  "AI-Powered Design": "Leveraging Midjourney, Adobe Firefly, Runway ML, and AI tools to accelerate creative production.",
   "Social Media Design": "Curating platform-specific templates, grid aesthetics, and performance-based assets.",
   "Campaign Creatives": "Promotional campaign banners, clearance sale creatives, and paid acquisition designs.",
   "Content Strategy": "Translating core brand missions and marketing goals into engaging digital storytelling layouts.",
@@ -50,9 +51,9 @@ const domains = [
   },
   {
     id: "marketing",
-    label: "Digital Content & Strategy",
-    icon: "📱",
-    skills: ["Social Media Design", "Campaign Creatives", "Content Strategy", "Print Design"],
+    label: "AI & Digital Content",
+    icon: "🤖",
+    skills: ["AI-Powered Design", "Social Media Design", "Campaign Creatives", "Print Design"],
     tools: ["cv", "ps", "ai", "fg", "id"],
     featuredProjectId: 24 // Modern Glazing
   }
